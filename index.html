@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>portafolio¬Reynaldo Solís</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="./img/devs.ico">
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">DEV</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Reynaldo Solís</h1>
+            <h2>Ingeniero de Sistema - Enfocado en Desarrollo Web</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/solisrey22/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Reynaldo Solís.</span> Soy Ingeniero de Sistemas con más de 3 años de experiencia
+                como Desarrollador de Software con habilidades para creación, actualización y soporte de Software
+                en entornos de pruebas y producción. Actualmente trabajo para Grupo Monge S.A</p>
+
+            <div class="fila" id="slider">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Celular</strong>
+                            +505 8869 4103
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            solissilvareynaldo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Managua, Nicaragua
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>INGENIERO DE DESARROLLO</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Conocimiento</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-dev"></i>
+                            <span>.NET</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>HTML, CSS Y JS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL SERVER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>GIT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a class="fa-solid fa-download" href="archivos/REYNALDO SOLIS CV.pdf" download="Reynaldo Solís CV.pdf">
+                    Descargar CV</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Habilidades y Conocimiento</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3 class="Educacion">Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistema</h4>
+                        <span class="casa">Universidad Nacional de Ingeniería</span>
+                        <span class="fecha">2020</span>
+                        <p>Titulado como ingeniero de sistemas, en donde entendí las bases de la programación
+                            y desarrollo de software.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés comunicativo</h4>
+                        <span class="casa">Keiser University</span>
+                        <span class="fecha">2020-2021</span>
+                        <p>Tuve la oportunidad de acceder a un programa de inglés en Keiser University en donde pude
+                            alcanzar
+                            el nivel B1 en el idioma inglés.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Inglés comunicativo</h4>
+                        <span class="casa">Universidad Americana UAM</span>
+                        <span class="fecha">2020</span>
+                        <p>En esta universidad pude alcanzarel nivel A1 en el idioma
+                            inglés.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3 class="Experiencia">Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Ingeniero de Desarrollo</h4>
+                        <span class="casa">Grupo Monge S.A</span>
+                        <span class="fecha">2022 - Actualidad</span>
+                        <p>Estoy involucrado en todo el proceso relacionado con la
+                            creación, actualización y mantenimiento de diferentes módulos
+                            de sistemas de la empresa.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Docente Curso de Diseño Web</h4>
+                        <span class="casa">Universidad Nacional de Ingeniería</span>
+                        <span class="fecha">2023</span>
+                        <p> Tuve la oportunidad de ser docente del curso de Diseño Web de la UNI, en donde pude transmitir mi conocimiento sobre tecnologias bases
+                            como son: HTML, CSS y Javascript para la elaboración de páginas web estáticas y dinámicas.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Pasantias como Desarrollador de Software</h4>
+                        <span class="casa">Grupo Monge S.A</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>Estuve involucrado en todo el proceso relacionado con la
+                            actualización y mantenimiento de diferentes módulos del
+                            sistema FLEXI Pagos WAFI.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="">
+                    <div class="overlay">
+                        <h3>WAFI</h3>
+                        <p>Web de Afiliados de Créditos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="">
+                    <div class="overlay">
+                        <h3>Flexi Pagos</h3>
+                        <p>POSV</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.png" alt="">
+                    <div class="overlay">
+                        <h3>Monge Pay</h3>
+                        <p>Pagos de desembolsos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <h2> CONTÁCTAME</h2>
+            <P>"Tu trabajo va a suponer gran parte de tu vida, y la única 
+                forma de estar totalmente satisfecho es haciendo algo que 
+                creas que es un gran trabajo"
+            </P>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/solisrey22/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
