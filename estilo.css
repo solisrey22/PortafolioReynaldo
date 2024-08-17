@@ -128,6 +128,7 @@ html{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+    padding: 10px;
 }
 .inicio .contenido-banner .redes a:hover{
     background-color: var(--primary-color);
@@ -450,6 +451,7 @@ footer .redes a{
     margin: 40px 5px;
     font-size: 20px;
     transition: .3s;
+    padding: 10px;
 }
 footer .arriba{
     display: block;
@@ -464,6 +466,7 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    padding: 10px;
 }
 /* SECCION RESPONSIVE */
 @media (min-width:300px) and (max-width:740px){  
