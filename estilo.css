@@ -238,6 +238,18 @@ html{
     z-index: -1;
     transition: 1s;
 }
+.pulse {
+    animation: pulse-animation 3s infinite;
+    animation-delay: 3s;
+}
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px var(--text-color);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
 .sobremi button:hover .overlay{
     width: 100%;
 }
@@ -483,7 +495,7 @@ footer .arriba:hover{
    scale: 1.5;
 }
 /* SECCION RESPONSIVE */
-@media (min-width:300px) and (max-width:740px){  
+@media (min-width:300px) and (max-width:911px){  
     nav{
         display: none;
     }
@@ -565,15 +577,6 @@ footer .arriba:hover{
         align-items: center;
         justify-content: center;
     }
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
-    }
     /* Curriculum */
     .curriculum h2{
         font-size: 40px;
@@ -615,7 +618,7 @@ footer .arriba:hover{
         font-size: 40px;
     }
 }
-@media (min-width:741px) and (max-width:1024px){  
+@media (min-width:912px) and (max-width:1023px){  
     /* Banner */
     .inicio .contenido-banner{
         max-width: 500px;
@@ -641,42 +644,43 @@ footer .arriba:hover{
         font-weight: bold;
         font-size:20px;
     }
-    .sobremi .fila{
-        display:contents;
+   .sobremi .fila{
+        display: inline-block;
     }
     .sobremi .fila .col{
         width: fit-content;
     }
     .sobremi .fila .col h3{
-        font-size: 35px;
-        padding:20px;
-        text-align:start;
-        margin-inline: 40px;
+        font-size: 28px;
+        padding: 20px;
+        text-align: left;
     }
     .sobremi .fila .col ul{
         list-style: none;
-        padding-inline-start: 130px;
-        margin:20px;
+        padding-inline-start: 180px;
+        margin: 30px;
+        text-align: 30px;
     }
     .sobremi .fila .col ul li{
-        margin: 10px 0;
         font-size: 20px;
-        margin-right: 2rem;
     }
     .sobremi .fila .col ul li strong{
+        display:inline-flex;
+        color: var(--primary-color);
         width: 100px;
         font-size: 20px;
-        text-align: center;
     }
     .sobremi .fila .col ul li span{
+        background-color: var(--primary-color);
         padding: 3px;
+        font-weight: bold;
         border-radius: 5px;
     }
     .sobremi .fila .col .contenedor-intereses{
         display: flex;
-        flex-wrap: wrap;
-        align-items:center;
+        align-items: center;
         justify-content: center;
+        margin-block:   10px;
     }
     /* Curriculum */
     .curriculum h2{
@@ -726,8 +730,73 @@ footer .arriba:hover{
     footer h2{
         font-size: 40px;
     }
-
     footer p{
         font-size: 20px;
+    }
+}
+@media (min-width:1024px) and (max-width:1400px){  
+    /* Banner */
+    .inicio .contenido-banner{
+        max-width: 500px;
+    }
+    .inicio .contenido-banner img{
+        margin-top: 40px;
+        width: 90%;
+    }
+    
+    .inicio .contenido-banner h2{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    /* Sobre mi */
+    .sobremi h2{
+        font-size: 45px;
+    }
+    .sobremi .contenido-seccion p{
+        font-size:20px;
+    }
+    .sobremi .contenido-seccion p span{
+        color: var(--primary-color);
+        font-weight: bold;
+        font-size:20px;
+    }
+   .sobremi .fila{
+        display: inline-block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+    .sobremi .fila .col h3{
+        font-size: 28px;
+        padding: 10px;
+        text-align: left;
+    }
+    .sobremi .fila .col ul{
+        list-style: none;
+        padding-inline-start: 250px;
+        margin: 10px;
+        text-align: 30px;
+    }
+    .sobremi .fila .col ul li{
+        font-size: 20px;
+    }
+    .sobremi .fila .col ul li strong{
+        display:inline-flex;
+        color: var(--primary-color);
+        width: 100px;
+        font-size: 20px;
+    }
+    .sobremi .fila .col ul li span{
+        background-color: var(--primary-color);
+        padding: 3px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .sobremi .fila .col .contenedor-intereses{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-block:   15px;
+        padding-inline-start: 100px;
     }
 }
