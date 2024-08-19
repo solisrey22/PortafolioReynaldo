@@ -17,6 +17,8 @@ html{
     --third-color: #54b16b;
     --text-color:#fff;
     --animate-duration: 2s; 
+    --interes-drop-shadow: drop-shadow(0px 0px 10px rgba(31, 137, 151, 0.3));
+    --my-drop-shadow: drop-shadow(0px 0px 35px rgba(31, 137, 151, 0.3));
 }
 
 /* MENU */
@@ -241,7 +243,7 @@ html{
 }
 
 .interes{
-    filter: drop-shadow(0px 0px 10px rgba(31, 137, 151, 0.3));
+    filter: var(--interes-drop-shadow);
 }
 /* SECCION CURRICULUM */
 .curriculum{
@@ -291,7 +293,7 @@ html{
 }
 .curriculum .fila .item .casa{
     color: var(--primary-color);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     display: block;
 }
@@ -306,16 +308,18 @@ html{
 .curriculum .fila .izq{
     border-right: 2px solid var(--primary-color);
     margin-right: 20px;
+    transition: 2s;
 }
 .curriculum .fila .izq:hover{
-    filter: drop-shadow(0px 0px 15px rgba(31, 137, 151, 0.3));
+    filter: var(--my-drop-shadow);
 }
 .curriculum .fila .der{
     border-left: 2px solid var(--primary-color);
     margin-left: 20px;
+    transition: 2s;
 }
 .curriculum .fila .der:hover{
-    filter: drop-shadow(0px 0px 15px rgba(31, 137, 151, 0.3));
+    filter: var(--my-drop-shadow);
 }
 .curriculum .fila .item .conectori{
     height: 2px;
@@ -473,6 +477,7 @@ footer .arriba{
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+    transition: 2s;
 }
 footer .arriba:hover{
    scale: 1.5;
@@ -499,6 +504,18 @@ footer .arriba:hover{
     nav.responsive ul li{
         border-bottom: 1px solid var(--text-color);;
         padding: 10px 0;
+    }
+     /* Banner */
+     .inicio .contenido-banner{
+        max-width: 400px;
+    }
+    .inicio .contenido-banner img{
+        margin-top: 40px;
+        width: 90%;
+    }
+    .inicio .contenido-banner h2{
+        margin-top: 10px;
+        font-size: 20px;
     }
     /* Sobre mi */
     .sobremi h2{
